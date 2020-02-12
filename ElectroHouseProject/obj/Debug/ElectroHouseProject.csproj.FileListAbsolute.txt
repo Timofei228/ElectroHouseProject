@@ -1,0 +1,10 @@
+C:\Users\timur\source\repos\ElectroHouseProject\ElectroHouseProject\bin\Debug\ElectroHouseProject.exe.config
+C:\Users\timur\source\repos\ElectroHouseProject\ElectroHouseProject\bin\Debug\ElectroHouseProject.exe
+C:\Users\timur\source\repos\ElectroHouseProject\ElectroHouseProject\bin\Debug\ElectroHouseProject.pdb
+C:\Users\timur\source\repos\ElectroHouseProject\ElectroHouseProject\obj\Debug\ElectroHouseProject.csprojAssemblyReference.cache
+C:\Users\timur\source\repos\ElectroHouseProject\ElectroHouseProject\obj\Debug\ElectroHouseProject.Form1.resources
+C:\Users\timur\source\repos\ElectroHouseProject\ElectroHouseProject\obj\Debug\ElectroHouseProject.Properties.Resources.resources
+C:\Users\timur\source\repos\ElectroHouseProject\ElectroHouseProject\obj\Debug\ElectroHouseProject.csproj.GenerateResource.cache
+C:\Users\timur\source\repos\ElectroHouseProject\ElectroHouseProject\obj\Debug\ElectroHouseProject.csproj.CoreCompileInputs.cache
+C:\Users\timur\source\repos\ElectroHouseProject\ElectroHouseProject\obj\Debug\ElectroHouseProject.exe
+C:\Users\timur\source\repos\ElectroHouseProject\ElectroHouseProject\obj\Debug\ElectroHouseProject.pdb

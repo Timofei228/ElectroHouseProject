@@ -50,17 +50,12 @@
             this.lbl_FilCity = new System.Windows.Forms.Label();
             this.cb_Store = new System.Windows.Forms.ComboBox();
             this.lbl_FilStore = new System.Windows.Forms.Label();
-            this.lbl_endOfTrackbar = new System.Windows.Forms.Label();
-            this.lbl_Price = new System.Windows.Forms.Label();
-            this.lbl_StartTrackbar = new System.Windows.Forms.Label();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.cb_subcategory = new System.Windows.Forms.ComboBox();
             this.lbl_SubCategory = new System.Windows.Forms.Label();
             this.cb_category = new System.Windows.Forms.ComboBox();
             this.lbl_Category = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgTab)).BeginInit();
             this.gb_Filter.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgTab
@@ -180,7 +175,7 @@
             // lbl_QuatityProdName
             // 
             this.lbl_QuatityProdName.AutoSize = true;
-            this.lbl_QuatityProdName.Location = new System.Drawing.Point(383, 427);
+            this.lbl_QuatityProdName.Location = new System.Drawing.Point(554, 427);
             this.lbl_QuatityProdName.Name = "lbl_QuatityProdName";
             this.lbl_QuatityProdName.Size = new System.Drawing.Size(16, 17);
             this.lbl_QuatityProdName.TabIndex = 5;
@@ -189,7 +184,7 @@
             // lbl_QuatityStore
             // 
             this.lbl_QuatityStore.AutoSize = true;
-            this.lbl_QuatityStore.Location = new System.Drawing.Point(885, 427);
+            this.lbl_QuatityStore.Location = new System.Drawing.Point(1162, 427);
             this.lbl_QuatityStore.Name = "lbl_QuatityStore";
             this.lbl_QuatityStore.Size = new System.Drawing.Size(16, 17);
             this.lbl_QuatityStore.TabIndex = 8;
@@ -198,7 +193,7 @@
             // lbl_QuatityCity
             // 
             this.lbl_QuatityCity.AutoSize = true;
-            this.lbl_QuatityCity.Location = new System.Drawing.Point(1005, 427);
+            this.lbl_QuatityCity.Location = new System.Drawing.Point(1312, 427);
             this.lbl_QuatityCity.Name = "lbl_QuatityCity";
             this.lbl_QuatityCity.Size = new System.Drawing.Size(16, 17);
             this.lbl_QuatityCity.TabIndex = 10;
@@ -210,10 +205,6 @@
             this.gb_Filter.Controls.Add(this.lbl_FilCity);
             this.gb_Filter.Controls.Add(this.cb_Store);
             this.gb_Filter.Controls.Add(this.lbl_FilStore);
-            this.gb_Filter.Controls.Add(this.lbl_endOfTrackbar);
-            this.gb_Filter.Controls.Add(this.lbl_Price);
-            this.gb_Filter.Controls.Add(this.lbl_StartTrackbar);
-            this.gb_Filter.Controls.Add(this.trackBar1);
             this.gb_Filter.Controls.Add(this.cb_subcategory);
             this.gb_Filter.Controls.Add(this.lbl_SubCategory);
             this.gb_Filter.Controls.Add(this.cb_category);
@@ -229,15 +220,16 @@
             // 
             this.cb_City.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cb_City.FormattingEnabled = true;
-            this.cb_City.Location = new System.Drawing.Point(1223, 36);
+            this.cb_City.Location = new System.Drawing.Point(904, 33);
             this.cb_City.Name = "cb_City";
             this.cb_City.Size = new System.Drawing.Size(121, 24);
             this.cb_City.TabIndex = 11;
+            this.cb_City.TextChanged += new System.EventHandler(this.cb_City_TextChanged);
             // 
             // lbl_FilCity
             // 
             this.lbl_FilCity.AutoSize = true;
-            this.lbl_FilCity.Location = new System.Drawing.Point(1169, 40);
+            this.lbl_FilCity.Location = new System.Drawing.Point(841, 39);
             this.lbl_FilCity.Name = "lbl_FilCity";
             this.lbl_FilCity.Size = new System.Drawing.Size(48, 17);
             this.lbl_FilCity.TabIndex = 10;
@@ -247,54 +239,20 @@
             // 
             this.cb_Store.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cb_Store.FormattingEnabled = true;
-            this.cb_Store.Location = new System.Drawing.Point(1042, 37);
+            this.cb_Store.Location = new System.Drawing.Point(688, 33);
             this.cb_Store.Name = "cb_Store";
             this.cb_Store.Size = new System.Drawing.Size(121, 24);
             this.cb_Store.TabIndex = 9;
+            this.cb_Store.TextChanged += new System.EventHandler(this.cb_Store_TextChanged);
             // 
             // lbl_FilStore
             // 
             this.lbl_FilStore.AutoSize = true;
-            this.lbl_FilStore.Location = new System.Drawing.Point(973, 40);
+            this.lbl_FilStore.Location = new System.Drawing.Point(608, 39);
             this.lbl_FilStore.Name = "lbl_FilStore";
             this.lbl_FilStore.Size = new System.Drawing.Size(63, 17);
             this.lbl_FilStore.TabIndex = 8;
             this.lbl_FilStore.Text = "Магазин";
-            // 
-            // lbl_endOfTrackbar
-            // 
-            this.lbl_endOfTrackbar.AutoSize = true;
-            this.lbl_endOfTrackbar.Location = new System.Drawing.Point(895, 40);
-            this.lbl_endOfTrackbar.Name = "lbl_endOfTrackbar";
-            this.lbl_endOfTrackbar.Size = new System.Drawing.Size(72, 17);
-            this.lbl_endOfTrackbar.TabIndex = 7;
-            this.lbl_endOfTrackbar.Text = "10000000";
-            // 
-            // lbl_Price
-            // 
-            this.lbl_Price.AutoSize = true;
-            this.lbl_Price.Location = new System.Drawing.Point(598, 39);
-            this.lbl_Price.Name = "lbl_Price";
-            this.lbl_Price.Size = new System.Drawing.Size(43, 17);
-            this.lbl_Price.TabIndex = 6;
-            this.lbl_Price.Text = "Цена";
-            // 
-            // lbl_StartTrackbar
-            // 
-            this.lbl_StartTrackbar.AutoSize = true;
-            this.lbl_StartTrackbar.Location = new System.Drawing.Point(646, 40);
-            this.lbl_StartTrackbar.Name = "lbl_StartTrackbar";
-            this.lbl_StartTrackbar.Size = new System.Drawing.Size(16, 17);
-            this.lbl_StartTrackbar.TabIndex = 5;
-            this.lbl_StartTrackbar.Text = "0";
-            // 
-            // trackBar1
-            // 
-            this.trackBar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trackBar1.Location = new System.Drawing.Point(668, 33);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(221, 56);
-            this.trackBar1.TabIndex = 4;
             // 
             // cb_subcategory
             // 
@@ -304,6 +262,7 @@
             this.cb_subcategory.Name = "cb_subcategory";
             this.cb_subcategory.Size = new System.Drawing.Size(201, 24);
             this.cb_subcategory.TabIndex = 3;
+            this.cb_subcategory.TextChanged += new System.EventHandler(this.cb_subcategory_TextChanged);
             // 
             // lbl_SubCategory
             // 
@@ -322,7 +281,6 @@
             this.cb_category.Name = "cb_category";
             this.cb_category.Size = new System.Drawing.Size(169, 24);
             this.cb_category.TabIndex = 1;
-            this.cb_category.SelectedIndexChanged += new System.EventHandler(this.cb_category_SelectedIndexChanged);
             this.cb_category.TextChanged += new System.EventHandler(this.cb_category_TextChanged);
             // 
             // lbl_Category
@@ -357,7 +315,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgTab)).EndInit();
             this.gb_Filter.ResumeLayout(false);
             this.gb_Filter.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -374,18 +331,14 @@
         private System.Windows.Forms.Label lbl_QuatityStore;
         private System.Windows.Forms.Label lbl_QuatityCity;
         private System.Windows.Forms.GroupBox gb_Filter;
-        private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.ComboBox cb_subcategory;
         private System.Windows.Forms.Label lbl_SubCategory;
         private System.Windows.Forms.ComboBox cb_category;
         private System.Windows.Forms.Label lbl_Category;
-        private System.Windows.Forms.Label lbl_StartTrackbar;
         private System.Windows.Forms.ComboBox cb_City;
         private System.Windows.Forms.Label lbl_FilCity;
         private System.Windows.Forms.ComboBox cb_Store;
         private System.Windows.Forms.Label lbl_FilStore;
-        private System.Windows.Forms.Label lbl_endOfTrackbar;
-        private System.Windows.Forms.Label lbl_Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn CategoryCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn SubCategoryCol;
